@@ -1,18 +1,18 @@
 import React from 'react';
 import Header from './components/Header';
+import Navbar from './components/Navbar';
+import Feed from './components/Feed';
+import Header_2 from './components/Header_2';
 
 
 function Home(){
+  
   return<>
-      <Header />
-      <div></div>
+      <Header_2 />
+      
       <main>
-          <div className="navbar">
-
-          </div>
-          <div className="feed">
-
-          </div>
+        <Navbar />     
+        <Feed />
       </main>
   </>
 }
