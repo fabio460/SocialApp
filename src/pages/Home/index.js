@@ -1,14 +1,13 @@
 import React from 'react';
-import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Feed from './components/Feed';
-import Header_2 from './components/Header_2';
+import Header from './components/Header';
 
 
 function Home(){
   
   return<>
-      <Header_2 />
+      <Header />
       
       <main>
         <Navbar />     
