@@ -2,13 +2,14 @@
 import './App.css';
 import './pages/Home'
 import Home from './pages/Home';
-
+import { Provider } from 'react-redux';
 import {BrowserRouter,Route,Link,Switch} from 'react-router-dom';
 import Sign from './pages/Sign';
-
+import store from './store';
 function App() {
   return (
-    <div className="App">
+   <Provider store={store}>
+      <div className="App">
       <BrowserRouter>
         <Link to='/'>
            
@@ -26,6 +27,7 @@ function App() {
         </Switch>
       </BrowserRouter>
     </div>
+   </Provider>
   );
 }
 
